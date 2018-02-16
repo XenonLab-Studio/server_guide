@@ -17,10 +17,8 @@ man = {}
 
 man.welcome = "Message...";
 
-
 man.players = {};
 local worldpath = minetest.get_worldpath();
-
 
 minetest.register_on_joinplayer(function(player) 
 	local name = player:get_player_name(); if name == nil then return end 
